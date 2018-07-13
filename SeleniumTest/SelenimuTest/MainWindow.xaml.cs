@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.IE;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,22 @@ namespace SelenimuTest
         public MainWindow()
         {
             InitializeComponent();
+
+            // InternetExplorer
+            IWebDriver ie = new InternetExplorerDriver();
+            SearchGoogle(ie);
+
+            // 注意
+            // http://sig9.hatenablog.com/entry/2015/01/13/010335
+            // 「NoSuchElementException」が発生する場合があります。この場合は IE のインターネットオプションからセキュリティタブを選択し、全てのセキュリティゾーンに対して「保護モードを有効にする」へチェックしておきます。
+        }
+
+        private void SearchGoogle(IWebDriver ie)
+        {
+            ie.Url = "https://www.google.co.jp";
+            IWebElement element = ie.FindElement(By.Name("q"));
+            element.SendKeys("Cheese!");
+            element.Submit();
         }
     }
 }
