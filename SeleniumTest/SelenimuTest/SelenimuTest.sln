@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelenimuTest", "SelenimuTest.csproj", "{80FC97EE-BC2F-450C-BDFC-39AB2615865D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80FC97EE-BC2F-450C-BDFC-39AB2615865D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FC97EE-BC2F-450C-BDFC-39AB2615865D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FC97EE-BC2F-450C-BDFC-39AB2615865D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FC97EE-BC2F-450C-BDFC-39AB2615865D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4768F74-5518-4EF0-8AC7-6FD07413A136}
+	EndGlobalSection
+EndGlobal
